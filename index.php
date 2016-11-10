@@ -57,8 +57,7 @@ $profiles = [
 ];
 
 // Добавить массив profiles в .json файл
-create_json($profiles);
-
+create_json($profiles,'files/phone.json');
 
 ?>
 
@@ -77,7 +76,7 @@ create_json($profiles);
 
 <?php
 
-$json = read_json();
+$json = read_json('files/phone.json');
 // Вывожу их в цикле
 for($i = 0; $i < count($json); $i++) :
 
